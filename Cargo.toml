@@ -1,0 +1,24 @@
+[package]
+name = "terr-gen"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+avian3d = "0.7.0"
+bevy = "0.19.1"
+bevy-inspector-egui = "0.37.0"
+bevy_panorbit_camera = "0.35.1"
+fast_poisson = "1.0.2"
+fastnoise-lite = "1.1.1"
+meshopt = "0.6.2"
+noise = "0.9.0"
+rand = "0.10.3"
+rand_chacha = "0.10.0"
+
+
+[profile.dev]
+opt-level = 1
+debug = "line-tables-only"
+
+[profile.dev.package."*"]
+opt-level = 3
